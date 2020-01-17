@@ -1,21 +1,21 @@
 .header {
-    background-color:rgba(0,0,0,.2);
+    background:rgba(0,0,0,.2);
     grid-area:header;
     }
 
 .nav {
-    background-color:rgba(0,0,0,.2);
+    background:rgba(0,0,0,.2);
     grid-area:nav;
     }
 
 .main {
-    background-color:rgba(0,0,0,.2);
+    background:rgba(0,0,0,.2);
     grid-area:main;
     }
 
 
 .footer {
-    background-color:rgba(0,0,0,.2);
+    background:rgba(0,0,0,.2);
     grid-area:footer;
     }
 
