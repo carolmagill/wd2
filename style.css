@@ -21,10 +21,12 @@
 
 .container1 { /*for index.html*/
   display: grid;
-  grid-template-columns: 25% auto;
+  grid-template-columns: auto 1fr;
+  grid-gap:.5em;
+  margin:1%;
   grid-template-rows: 3em 3em 3em;
   grid-template-areas:
     "header header"
     "nav main"
-    "footer footer";
-    }
+    "footer footer"
+}
