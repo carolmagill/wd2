@@ -1,3 +1,7 @@
+body {
+    background: linear-gradient(to right, lightgreen, teal);
+
+
 .header {
     background:rgba(0,0,0,.2);
     grid-area:header;
