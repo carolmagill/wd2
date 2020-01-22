@@ -1,6 +1,9 @@
 body {
     background: linear-gradient(to right, lightgreen, teal);
-
+    font-family: Veradana;
+    margin: 0;
+}
+    
 
 .header {
     background:rgba(0,0,0,.2);
@@ -10,6 +13,7 @@ body {
 .nav {
     background:rgba(0,0,0,.2);
     grid-area:nav;
+    padding: 5px;
     }
 
 .main {
@@ -34,3 +38,5 @@ body {
     "nav main"
     "footer footer"
 }
+header1 {
+    
