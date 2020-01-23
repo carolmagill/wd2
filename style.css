@@ -9,6 +9,13 @@ header {
     background:rgba(0,0,0,.2);
     grid-area:header;
     }
+header 1 {
+    color: mediumspringgreen;
+    text-shadow: 2px 2px 5px navy;
+}
+header h3 {
+    color: navy;
+}
 
 nav {
     background:rgba(0,0,0,.2);
@@ -41,12 +48,21 @@ main {
     background:rgba(0,0,0,.2);
     grid-area:main;
     }
+main h2 {
+    color: navy;
+}
+main p {
+    color: white;
+}
 
 
 footer {
     background:rgba(0,0,0,.2);
     grid-area:footer;
     }
+footer p { 
+    color: white;
+}
 
 .container1 { /*for index.html*/
   display: grid;
