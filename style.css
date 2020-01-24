@@ -12,11 +12,11 @@ header {
 header h1 {
     color: mediumspringgreen;
     text-shadow: 2px 2px 5px navy;
-    width: 5vw;
+    font-size: 5vw;
 }
 header h3 {
     color: navy;
-    width: 2vw;
+    font-size: 2vw;
 }
 nav {
     background:rgba(0,0,0,.2);
