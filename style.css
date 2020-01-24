@@ -9,7 +9,7 @@ header {
     background:rgba(0,0,0,.2);
     grid-area:header;
     }
-header 1 {
+header h1 {
     color: mediumspringgreen;
     text-shadow: 2px 2px 5px navy;
     width: 5vw;
@@ -18,7 +18,6 @@ header h3 {
     color: navy;
     width: 2vw;
 }
-
 nav {
     background:rgba(0,0,0,.2);
     grid-area:nav;
@@ -35,7 +34,7 @@ nav ul {
      list-style-type: none;
      font-size: 1.5em;
      font-weight: bold;
-     width: 1.5em;
+     font-size: 1.5em;
     }
     
     nav a {
@@ -45,7 +44,6 @@ nav ul {
     
   a:hover {
       color: white;
-      
     }
 main {
     background:rgba(0,0,0,.2);
@@ -56,7 +54,7 @@ main h2 {
 }
 main p {
     color: white;
-    width: 1em;
+    font-size: 1em;
 }
 
 
@@ -66,7 +64,7 @@ footer {
     }
 footer p { 
     color: white;
-    width: 1em;
+    font-size: 1em;
 }
 
 .container1 { /*for index.html*/
