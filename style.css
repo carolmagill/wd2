@@ -8,6 +8,7 @@ body {
 header {
     background:rgba(0,0,0,.2);
     grid-area:header;
+    text-align:center;
     }
 header h1 {
     color: mediumspringgreen;
@@ -62,6 +63,7 @@ main p {
 footer {
     background:rgba(0,0,0,.2);
     grid-area:footer;
+    text-align: center;
     }
 footer p { 
     color: white;
