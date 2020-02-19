@@ -41,7 +41,6 @@ nav ul {
 
 nav li {
   padding:10px 10px;
-
   list-style-type:none;
   font-size:1.5em;
   font-weight:bold;
@@ -86,6 +85,24 @@ footer p {
   color:white;
   margin:0;
 }
+aside {
+  grid-area:aside;
+  background:rgba(0,0,0,.2);
+  padding: 5px;
+}
+aside ul {
+  
+}
+aside li {
+  color:navy;
+  padding:10px 5px;
+}
+aside a {
+  color:white;
+}
+aside a:hover {
+  color:navy;
+}
 
 /*---------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
@@ -97,6 +114,7 @@ footer p {
     "header"
     "nav"
     "main"
+    "aside"
     "footer";
     }
 
@@ -134,6 +152,7 @@ footer p {
   grid-template-areas:
     "header header"
     "nav main"
+    "aside aside"
     "footer footer";
     }
 
@@ -160,46 +179,13 @@ footer p {
 @media only screen and (min-width: 960px)  {
 
 .container1 { /*for index.html*/
-  grid-template-columns:auto 1fr;
+  grid-template-columns:auto 1fr 25%;
   grid-template-areas:
-    "header header"
-    "nav main"
-    "footer footer";
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
     }
 
 	
-
-}
-    nav a {
-     text-decoration: none;
-     color: navy;
-    }
-    
-  a:hover {
-      color: white;
-    }
-main {
-    background:rgba(0,0,0,.2);
-    grid-area:main;
-    padding:5px;
-    }
-main h2 {
-    color: navy;
-}
-main p {
-    color: white;
-    font-size: 1em;
-}
-
-
-footer {
-    background:rgba(0,0,0,.2);
-    grid-area:footer;
-    text-align: center;
-    }
-footer p { 
-    color: white;
-    font-size: 1em;
-}
 
 }
