@@ -1,7 +1,6 @@
 img {
   max-width:100%;
 }
-
 body {
   font-family: Verdana;
   background: linear-gradient(to right, lightgreen, teal);
@@ -72,7 +71,6 @@ main p {
   padding:1% 2%;
   font-size:1em;
 }
-
 footer {
   grid-area:footer;
   background:rgba(0,0,0,.2);
@@ -85,50 +83,86 @@ footer p {
   color:white;
   margin:0;
 }
-aside {
-  grid-area:aside;
+aside{
+  grid-area: aside;
   background:rgba(0,0,0,.2);
-  padding: 5px;
+  padding:5px;
 }
-aside ul {
-  
-}
-aside li {
-  color:navy;
-  padding:10px 5px;
-}
-aside a {
-  color:white;
-}
-aside a:hover {
-  color:navy;
-}
-article {
+  aside li {
+    color: navy;
+    padding: 10px 0;
+  }
+  aside a {
+    color: white;
+    font-size: 20px;
+  }
+  aside a:hover{
+    color:navy;
+  }
+  aside h2 {
+    color:navy;
+    text-align:center;
+    padding:5px 0;
+  }
+  article{
   background:rgba(0,0,0,.2);
-  padding: 5px;
-}
-article h2 {
- text-align:center;
-  color:navy;
-  margin:1%;
-}
-article p {
-  color:white;
-  padding: 1%;
-}
-.top {
-  grid-area:top;
-}
+  padding:5px;
+  }
+  .top{
+    grid-area: top;
+  background:rgba(0,0,0,.2);
+  padding:5px;
+  }
+    .middle{
+    grid-area: middle;
+  background:rgba(0,0,0,.2);
+  padding:5px;
+  }
+  .bottom{
+    grid-area: bottom;
+  background:rgba(0,0,0,.2);
+  padding:5px;
+  }
+  article h2{
+    text-align:center;
+    color:navy;
+  }
+  article p {
+    color: white;
+    text-align: left;
+    
+  }
+  .travelpic {
+    margin:auto;
+  }
+  figure {
+    margin:0;
+    text-align:center;
+  }
+  figcaption {
+    padding: 5px;
+    color:navy;
+    font-weight:bold;
+  }
+   figure img {
+     padding-top:10px;
+   }
+  section{
+     grid-area: section;
+       padding:5px;
+     }
+   .fig1 {
+     grid-area: fig1;
+       background:rgba(0,0,0,.2);
+       padding:5px;
+   }
+   .fig2 {
+     grid-area: fig2;
+       background:rgba(0,0,0,.2);
+       padding:5px;
+   }
 
-.middle {
-  grid-area:middle;
-}
-
-.bottom {
-  grid-area:bottom;
-}
-
-/*---------------------------Mobile Layout Styles----------------------------*/
+/*------------------------Mobile Layout Styles----------------------------*/
 .container1 { /*for index.html*/
   display: grid;
   grid-template-columns:100%;
@@ -141,7 +175,7 @@ article p {
     "aside"
     "footer";
     }
-.container2 { /*for blog.html*/
+    .container2 { /*for blog.html*/
   display: grid;
   grid-template-columns:100%;
   grid-gap:.5em;
@@ -155,6 +189,25 @@ article p {
     "bottom"
     "footer";
     }
+    .container3 { /*for special.html*/
+  display: grid;
+  grid-template-columns:100%;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "fig2"
+    "footer";
+    }
+.nestedgrid {
+  display:grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+ "section"
+  "fig1";
+}
 /*This stuff is for the hamburger menu*/
 .toggleNav {
     display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
@@ -181,7 +234,13 @@ article p {
     padding-top:10px;
     }
 
-
+.nestedgrid {
+  display:grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+ "section"
+  "fig1";
+}
 /*-----------------------Tablet Media Query------------------------*/
 @media only screen and (min-width: 480px)  {
 .container1 { /*for index.html*/
@@ -193,10 +252,7 @@ article p {
     "footer footer";
     }
 .container2 { /*for blog.html*/
-  display: grid;
   grid-template-columns:auto 1fr;
-  grid-gap:.5em;
-  margin:1%;
   grid-template-areas:
     "header header"
     "nav main"
@@ -205,6 +261,21 @@ article p {
     "bottom bottom"
     "footer footer";
     }
+.container3 { /*for special.html*/
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "fig2 fig2"
+    "footer footer";
+    }
+.nestedgrid {
+  display:grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+ "section"
+  "fig1";
+}
 
 /* Below will change from hamburger menu to side navigation*/
   
@@ -222,7 +293,6 @@ article p {
     padding-top:10px;
   }
 
-	}
 
 /*-----------------------Desktop Media Query------------------------*/
 @media only screen and (min-width: 960px)  {
@@ -235,10 +305,7 @@ article p {
     "footer footer footer";
     }
 .container2 { /*for blog.html*/
-  display: grid;
   grid-template-columns:auto 1fr 1.5fr;
-  grid-gap:.5em;
-  margin:1%;
   grid-template-areas:
     "header header header"
     "nav main top"
@@ -246,6 +313,18 @@ article p {
     "nav main bottom"
     "footer footer footer";
     }
-	
-
+.container3 { /*for special.html*/
+  grid-template-columns:auto 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main"
+    "fig2 fig2"
+    "footer footer";
+}
+.nestedgrid {
+  display:grid;
+   grid-template-columns:1fr auto;
+  grid-template-areas:
+   "section fig1";
+	}
 }
